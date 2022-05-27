@@ -1,9 +1,8 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonCard, 
   IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonImg} from '@ionic/react';
-import { logoWindows, logoSteam, logoDiscord, logoWhatsapp } from 'ionicons/icons';
+import { logoAmazon, logoSteam, logoPlaystation, logoTiktok } from 'ionicons/icons';
 import './Tab1.css';
-import ExploreContainer from '../components/ExploreContainer';
 
 const Tab1: React.FC = () => {
   return (
@@ -16,25 +15,26 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
       <IonCard>
           <IonCardHeader>
-            <IonImg src={logoWindows}/>
-            <IonCardSubtitle>Sistema Operativo</IonCardSubtitle>
-            <IonCardTitle>Windows</IonCardTitle>
+            <IonImg src={logoAmazon}/>
+            <IonCardSubtitle>Tienda en linea</IonCardSubtitle>
+            <IonCardTitle>Amzon</IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>
-          Windows es un sistema operativo creado por Microsoft. Consiste en un conjunto de programas que permiten la ejecución de los recursos que tiene un ordenador. El significado del término (windows, ventanas) hace alusión a su interfaz gráfica, que presenta un modelo basado en tareas y compartimentos independientes, con sus propios menús y controles.      
+          Amazon.com, Inc. es una compañía estadounidense de comercio electrónico y servicios de computación en la nube a todos los niveles con sede en la ciudad de Seattle, Washington. Su lema es: From A to Z. Es una de las primeras grandes compañías en vender bienes a través de Internet.
           </IonCardContent>
         </IonCard>
 
         <IonCard>
           <IonCardHeader>
-            <IonImg src={logoWhatsapp} />
-            <IonCardSubtitle>Apps</IonCardSubtitle>
-            <IonCardTitle>WhatsApp</IonCardTitle>
+            <IonImg src={logoTiktok} />
+            <IonCardSubtitle>Redes Sociales</IonCardSubtitle>
+            <IonCardTitle>Tiktok</IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>
-          WhatsApp es una aplicación de chat para teléfonos móviles de última generación, los llamados smartphones. Sirve para enviar mensajes de texto y multimedia entre sus usuarios.      </IonCardContent>
+          es una red social de origen chino para compartir videos cortos y en formato vertical propiedad de la empresa china ByteDance.​
+          </IonCardContent>
         </IonCard>
 
         <IonCard>
@@ -51,13 +51,13 @@ const Tab1: React.FC = () => {
 
         <IonCard>
           <IonCardHeader>
-            <IonImg src={logoDiscord} />
-            <IonCardSubtitle>Comunicación</IonCardSubtitle>
-            <IonCardTitle>Discord</IonCardTitle>
+            <IonImg src={logoPlaystation} />
+            <IonCardSubtitle>Creador de consolas</IonCardSubtitle>
+            <IonCardTitle>PlayStation</IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>
-            Es una aplicacion de comunicación mejor usada por las personas a la hora de jugar videojuegos para comunicarse con sus compañeros.
+          Es el nombre de una serie de consolas de videojuegos creadas y desarrolladas por Sony Interactive Entertainment. Han estado presentes en la quinta, sexta, séptima, octava y novena generación de videoconsolas, la compañía promotora está actualmente en el mercado con su PlayStation 5.
       </IonCardContent>
         </IonCard>
     </IonContent>

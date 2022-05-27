@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { atOutline, cloud, documentOutline, documentText, ellipse, informationCircle, square, textOutline, triangle } from 'ionicons/icons';
+import { albumsSharp, appsSharp, menuSharp} from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -56,15 +56,15 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={documentOutline} />
+            <IonIcon icon={albumsSharp} />
             <IonLabel>Cards</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={documentText} />
-            <IonLabel>Guardado</IonLabel>
+            <IonIcon icon={menuSharp} />
+            <IonLabel>Lista</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={cloud} />
+            <IonIcon icon={appsSharp} />
             <IonLabel>Botones</IonLabel>
           </IonTabButton>
         </IonTabBar>
