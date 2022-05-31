@@ -1,4 +1,4 @@
-import {  IonContent, IonHeader, IonSlides, IonSearchbar, IonImg, IonPage, IonSlide, IonTitle, IonToolbar, IonButton, IonToast} from '@ionic/react';
+import {  IonContent, IonHeader, IonSlides, IonSearchbar, IonImg, IonPage, IonSlide, IonTitle, IonToolbar, IonButton, IonToast, IonGrid, IonRow} from '@ionic/react';
 import './Tab3.css';
 import { logoTwitch, logoInstagram } from 'ionicons/icons';
 import { Toast } from '@capacitor/toast';
@@ -41,15 +41,18 @@ const Tab3: React.FC = () => {
           duration={2100}
         />
 
-        <IonButton onClick={() => setShowToast1(true)} color='warning'>Accionar Toast</IonButton>
-        <IonButton onClick={() => share()} color='medium'>Compartir información</IonButton>
-        <IonButton onClick={() => link() } color='primary'>Perfil de Facebook</IonButton>
-        <IonButton onClick={() => sheet()} color='danger'>MenuSheet</IonButton>
-        <IonButton onClick={() => bateria()} color='tertiary'>Ver estado de bateria</IonButton>
-        <IonButton onClick={() => cargando()} color='secondary'>Comprobar si carga</IonButton>
-        <IonButton onClick={() => wifi() } color='success'>Ver si esta conectado a Wifi</IonButton>
-        <IonButton onClick={() => tipoConexion() } color='secondary'>Ver tipo de conexion</IonButton>
-
+    <IonContent fullscreen>
+      <IonGrid  class='ion-align-self-center'>
+        <IonRow class='ion-align-self-center' ><IonButton onClick={() => setShowToast1(true)} color='warning'>Accionar Toast</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => share()} color='medium'>Compartir información</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => link() } color='primary'>Perfil de Facebook</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => sheet()} color='danger'>MenuSheet</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => bateria()} color='tertiary'>Ver estado de bateria</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => cargando()} color='secondary'>Comprobar si carga</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => wifi() } color='success'>Ver si esta conectado a Wifi</IonButton></IonRow>
+        <IonRow class='ion-align-self-center'><IonButton onClick={() => tipoConexion() } color='secondary'>Ver tipo de conexion</IonButton></IonRow>
+      </IonGrid>
+    </IonContent>
       </IonContent>
     </IonPage>
   );
